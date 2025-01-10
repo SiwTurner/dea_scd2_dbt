@@ -37,9 +37,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dea_scd2_dbt_project:
-    # Applies to all files under models/example/
-    example:
-      +materialized: table
     silver:
       schema: silver
       materialized: table
